@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ListenChooseViewController.h
 //  QuizSystem
 //
 //  Created by framgia on 8/10/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ListenChooseViewController : UIViewController
 
 @end
-
