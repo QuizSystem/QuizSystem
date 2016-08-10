@@ -13,9 +13,11 @@
 		51930AA61D5B517000FADB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51930AA41D5B517000FADB94 /* Main.storyboard */; };
 		51930AA81D5B517000FADB94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51930AA71D5B517000FADB94 /* Assets.xcassets */; };
 		51930AAB1D5B517000FADB94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51930AA91D5B517000FADB94 /* LaunchScreen.storyboard */; };
+		E6B1F23EBA3054D6AC5D47CD /* libPods-QuizSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC99C3998E5E74B78C2C822 /* libPods-QuizSystem.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DC99C3998E5E74B78C2C822 /* libPods-QuizSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuizSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51930A981D5B517000FADB94 /* QuizSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51930A9C1D5B517000FADB94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51930A9E1D5B517000FADB94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		51930AA71D5B517000FADB94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51930AAA1D5B517000FADB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51930AAC1D5B517000FADB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E6647A94406E5E52FCE4D9A /* Pods-QuizSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuizSystem/Pods-QuizSystem.debug.xcconfig"; sourceTree = "<group>"; };
+		67D793BFC6763FE91DF7F787 /* Pods-QuizSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuizSystem/Pods-QuizSystem.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B1F23EBA3054D6AC5D47CD /* libPods-QuizSystem.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DF109758910C14ED2340766 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E6647A94406E5E52FCE4D9A /* Pods-QuizSystem.debug.xcconfig */,
+				67D793BFC6763FE91DF7F787 /* Pods-QuizSystem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A6D14A024DE00C5EDA6770B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DC99C3998E5E74B78C2C822 /* libPods-QuizSystem.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		51930A8F1D5B517000FADB94 = {
 			isa = PBXGroup;
 			children = (
 				51930A9A1D5B517000FADB94 /* QuizSystem */,
 				51930A991D5B517000FADB94 /* Products */,
+				1DF109758910C14ED2340766 /* Pods */,
+				2A6D14A024DE00C5EDA6770B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51930AAF1D5B517000FADB94 /* Build configuration list for PBXNativeTarget "QuizSystem" */;
 			buildPhases = (
+				58688DA681815ADF604549C5 /* [CP] Check Pods Manifest.lock */,
 				51930A941D5B517000FADB94 /* Sources */,
 				51930A951D5B517000FADB94 /* Frameworks */,
 				51930A961D5B517000FADB94 /* Resources */,
+				6E7E82EF93B789035A7031E6 /* [CP] Embed Pods Frameworks */,
+				509AE407132B31A5A5BECD24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		509AE407132B31A5A5BECD24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuizSystem/Pods-QuizSystem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58688DA681815ADF604549C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E7E82EF93B789035A7031E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuizSystem/Pods-QuizSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51930A941D5B517000FADB94 /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		51930AB01D5B517000FADB94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6647A94406E5E52FCE4D9A /* Pods-QuizSystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuizSystem/Info.plist;
@@ -274,6 +350,7 @@
 		};
 		51930AB11D5B517000FADB94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67D793BFC6763FE91DF7F787 /* Pods-QuizSystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuizSystem/Info.plist;
@@ -302,6 +379,7 @@
 				51930AB11D5B517000FADB94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
